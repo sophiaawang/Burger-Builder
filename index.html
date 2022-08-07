@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>title</title>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+  <div id="nav">
+    <div class="topping" data-ingredient="tomato" data-price="0.30">
+      Tomato
+    </div>
+    <div class="topping" data-ingredient="pineapple" data-price="0.50">Pineapple</div>
+    <div class="topping" data-ingredient="lettuce" data-price="0.00">
+      Lettuce
+    </div>
+    <div class="topping" data-ingredient="cheese" data-price="0.75">
+      Cheese
+    </div>
+    <div class="topping" data-ingredient="patty" data-price="1.25">Patty</div>
+
+  </div>
+  <div id="wrapper">
+    <div id="orderID" class="order">
+      <div id="bun" class="topping bun" data-ingredient="bun" data-price="0.00">
+        Bun $0.00
+      </div>
+      <div id="bunBottom" class="topping bun bottom" data-ingredient="bun" data-price="0.00">
+        Bun $0.00
+      </div>
+      <div id="tomato" class="topping stacked tomato" data-ingredient="tomato" data-price="0.30">
+        🍅 $0.30
+      </div>
+      <div id="pineapple" class="topping pineapple" data-ingredient="pineapple" data-price="0.50">
+        Pineapple $0.50
+      </div>
+      <div id="lattuce" class="topping lettuce" data-ingredient="lettuce" data-price="0.00">
+        Lettuce $0.00
+      </div>
+      <div id="cheese" class="topping cheese" data-ingredient="cheese" data-price="0.75">
+        Cheese $0.75
+      </div>
+      <div id="patty" class="topping patty" data-ingredient="patty" data-price="1.25">
+        Patty $1.25
+      </div>
+    </div>
+    <div id="checkout">
+      <div class="button">Check out</div>
+    </div>
+    <div id="total" class="hidden"></div>
+  </div>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
+
+<!--data-_____ you can grab that info in js from html  -->
+<!--in js use topping.dataset to get all data  -->
